@@ -1,0 +1,41 @@
+/* CSS declarations go here */
+
+.panel-heading{
+	/*background-color: #d9edf7 !important;*/
+}
+
+body{
+	font-family: 'Lato', sans-serif !important;
+	font-size: 18px;
+}
+
+.panel-primary > .panel-heading{
+	background-color: rgba(51,122,183,.9);
+}
+
+.panel-green .panel-heading{
+	background-color: rgba(92,184,92,.9)
+}
+
+h1.page-header {
+    margin: 10px 0;
+}
+
+.chart-sub{
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 32px;
+    
+}
+
+.sidebar ul li a{
+	font-size: 16px;
+}
