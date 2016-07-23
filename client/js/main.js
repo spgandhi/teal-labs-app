@@ -15,25 +15,25 @@ app.controller('Main', ['$scope', function ($scope) {
       {
          count: "24",
          text: "Total Students",
-         icon: "comments",
+         icon: "users",
          panel: "panel-primary"
       },
       {
          count: "46145",
          text: "Questions Attempted",
-         icon: "comments",
+         icon: "question-circle-o",
          panel: "panel-green"
       },
       {
          count: "84 %",
          text: "Class Performance",
-         icon: "comments",
+         icon: "cogs",
          panel: "panel-yellow"
       },
       {
-         count: "59",
-         text: "Something",
-         icon: "comments",
+         count: "1.23",
+         text: "TL Quotient",
+         icon: "graduation-cap",
          panel: "panel-red"
       }
    ]

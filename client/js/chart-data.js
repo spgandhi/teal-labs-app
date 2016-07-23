@@ -1,28 +1,28 @@
 var backgroundColor = [
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(54, 162, 235, .8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, .8)',
+                'rgba(255, 159, 64, 0.8)'
             ]
 
 var borderColor =  [
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(255,99,132,1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(54, 162, 235, .5)',
+                'rgba(255, 206, 86, .5)',
+                'rgba(255,99,132,.5)',
+                'rgba(75, 192, 192, .5)',
+                'rgba(153, 102, 255, .5)',
+                'rgba(255, 159, 64, .5)'
             ]
 
 var hoverBackgroundColor = [
-                'rgba(54, 162, 235, 0.7)',
-                'rgba(255, 206, 86, 0.7)',
-                'rgba(255, 99, 132, 0.7)',
-                'rgba(75, 192, 192, 0.7)',
-                'rgba(153, 102, 255, 0.7)',
-                'rgba(255, 159, 64, 0.7)'
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
             ]
 
 Chart.defaults.global.defaultFontSize = 14;
@@ -125,19 +125,18 @@ var data = {
     datasets: [
     {
         label: "Simple Interest",
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        backgroundColor: 'rgba(54, 162, 235, 0.8)',
         borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(255,99,132,1)',
-            'rgba(255,99,132,1)',
-            'rgba(255,99,132,1)',
-          
+            'rgba(54, 162, 235, .5)',
+            'rgba(54, 162, 235, .5)',
+            'rgba(54, 162, 235, .5)',
+            'rgba(54, 162, 235, .5)', 
         ],
         hoverBackgroundColor: [
-            'rgba(255, 99, 132, 0.7)',
-            'rgba(255, 99, 132, 0.7)',
-            'rgba(255, 99, 132, 0.7)',
-            'rgba(255, 99, 132, 0.7)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(54, 162, 235, 1)',
         ],
         data: [67.33, 78.89, 87.46, 84],
         stack: 1,
@@ -145,18 +144,18 @@ var data = {
     },
     {
         label: "Mensuration",
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        backgroundColor: 'rgba(255, 206, 86, 0.8)',
         borderColor: [
-            'rgba(54, 162, 235, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(54, 162, 235, 1)', 
+            'rgba(255, 206, 86, .5)',
+            'rgba(255, 206, 86, .5)',
+            'rgba(255, 206, 86, .5)',
+            'rgba(255, 206, 86, .5)',
         ],
         hoverBackgroundColor: [
-            'rgba(54, 162, 235, 0.7)',
-            'rgba(54, 162, 235, 0.7)',
-            'rgba(54, 162, 235, 0.7)',
-            'rgba(54, 162, 235, 0.7)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)', 
         ],
         data: [68.03, 82.24, 88, 87],
         stack: 2,
@@ -164,18 +163,31 @@ var data = {
     },
     {
         label: "Algebra",
-        backgroundColor: 'rgba(255, 206, 86, 0.2)',
+        
+        backgroundColor: 'rgba(255, 99, 132, 0.8)',
         borderColor: [
-            'rgba(255, 206, 86, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(255, 206, 86, 1)',
+            'rgba(255,99,132,.5)',
+            'rgba(255,99,132,.5)',
+            'rgba(255,99,132,.5)',
+            'rgba(255,99,132,.5)',
         ],
         hoverBackgroundColor: [
-            'rgba(255, 206, 86, 0.7)',
-            'rgba(255, 206, 86, 0.7)',
-            'rgba(255, 206, 86, 0.7)',
-            'rgba(255, 206, 86, 0.7)', 
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 1)',
+        ],
+        borderColor: [
+            'rgba(255, 206, 86, .5)',
+            'rgba(255, 206, 86, .5)',
+            'rgba(255, 206, 86, .5)',
+            'rgba(255, 206, 86, .5)',
+        ],
+        hoverBackgroundColor: [
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(255, 206, 86, 1)', 
         ],
       data: [79.13, 83.88, 82, 71],
       stack: 3,
@@ -208,26 +220,28 @@ var data = {
   datasets: [
     {
       label: "1st Week",
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      backgroundColor: 'rgba(54, 162, 235, 0.8)',
       data: [11, 19, 65, 21, 50, 23],
       stack: 1
     },
     
      {
       label: "2nd Week",
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+      backgroundColor: 'rgba(255, 206, 86, 0.8)',
+      
       data: [6, 10, 19, 14, 35, 11],
       stack: 2
     },
      {
       label: "3rd Week",
-      backgroundColor: 'rgba(255, 206, 86, 0.2)',
+      
+      backgroundColor: 'rgba(255, 99, 132, 0.8)',
       data: [11, 7, 10, 13, 32, 40],
       stack: 3
     },
     {
       label: "4th Week",
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
+      backgroundColor: 'rgba(75, 192, 192, 0.8)',
       data: [3.9, 4.18, 9, 21, 53, 20],
       stack: 4
     }
@@ -261,9 +275,9 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: 'Avg Time For Mensuration Questions (in secs)',
             data: [32, 16, 14, 18],
-            backgroundColor: backgroundColor,
-            borderColor: borderColor,
-            hoverBackgroundColor: hoverBackgroundColor,
+            backgroundColor: 'rgba(255, 206, 86, 0.8)',
+            borderColor: 'rgba(255, 206, 86, 0.5)',
+            hoverBackgroundColor: 'rgba(255, 206, 86, 1)',
             borderWidth: 1
         }]
     }
@@ -292,7 +306,7 @@ var ctx = document.getElementById("myChart6");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["Fast + Right", "Fast but Wrong"],
+        labels: ["Fast + Right", "Fast + Wrong"],
         datasets: [{
             label: '# of Votes',
             data: [1330, 102],
@@ -308,7 +322,7 @@ var ctx = document.getElementById("myChart7");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["Fast + Right", "Fast but Wrong"],
+        labels: ["Fast + Right", "Fast + Wrong"],
         datasets: [{
             label: '# of Votes',
             data: [1980, 92],
@@ -324,7 +338,7 @@ var ctx = document.getElementById("myChart8");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["Fast + Right", "Fast but Wrong"],
+        labels: ["Fast + Right", "Fast + Wrong"],
         datasets: [{
             label: '# of Votes',
             data: [605, 34],
@@ -410,14 +424,14 @@ var data = {
   datasets: [
     {
       label: "Class Average",
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+      backgroundColor: 'rgba(54, 162, 235, 0.8)',
       data: [74, 82, 81],
       stack: 1
     },
     
      {
       label: "Student's Average",
-      backgroundColor: 'rgba(255, 206, 86, 0.2)',
+      backgroundColor: 'rgba(255, 206, 86, 0.8)',
       data: [50, 61, 81],
       stack: 2
     },
