@@ -1,3 +1,6 @@
+Chart.defaults.global.defaultFontSize = 14;
+Chart.defaults.global.defaultFontFamily = "'Lato', sans-serif";
+
 var backgroundColor = [
                 'rgba(54, 162, 235, .8)',
                 'rgba(255, 206, 86, 0.8)',
@@ -24,9 +27,6 @@ var hoverBackgroundColor = [
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ]
-
-Chart.defaults.global.defaultFontSize = 14;
-Chart.defaults.global.defaultFontFamily = "'Lato', sans-serif";
 
 Chart.defaults.groupableBar = Chart.helpers.clone(Chart.defaults.bar);
 
@@ -100,7 +100,7 @@ Chart.controllers.groupableBar = Chart.controllers.bar.extend({
 });
 
 
-// 
+// 1st Chart - Questions Attempted
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
@@ -118,7 +118,7 @@ var myChart = new Chart(ctx, {
 });
 
 
-//
+// 2nd Chart - Class Performance
 
 var data = {
   labels: ["Week1", "Week2", "Week3", "Week4"],
@@ -212,9 +212,7 @@ new Chart(ctx, {
   }
 });
 
-// 3rd
-
-
+// 3rd Chart - Class Performance Vs Question Difficulty
 var data = {
   labels: ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
   datasets: [
@@ -265,7 +263,7 @@ new Chart(ctx, {
 });
 
 
-// 4th 
+// 4th Chart - Class' Mensuration Topic Performance
 
 var ctx = document.getElementById("myChart3");
 var myChart = new Chart(ctx, {
@@ -284,7 +282,7 @@ var myChart = new Chart(ctx, {
 });
 
 
-// 5th
+// 5th Chart- Class Accuracy
 
 var ctx = document.getElementById("myChart5");
 var myChart = new Chart(ctx, {
@@ -302,6 +300,8 @@ var myChart = new Chart(ctx, {
     }
 });
 
+
+// 6th Chart - Class Accuracy
 var ctx = document.getElementById("myChart6");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
@@ -318,6 +318,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
+// // 7th Chart - Class Accuracy
 var ctx = document.getElementById("myChart7");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
@@ -334,6 +335,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
+// 8th Chart - Class Accuracy
 var ctx = document.getElementById("myChart8");
 var myChart = new Chart(ctx, {
     type: 'doughnut',
@@ -350,7 +352,8 @@ var myChart = new Chart(ctx, {
     }
 });
 
-// 9th
+// 9th Chart - Questions Attempted (Individual)
+
 var ctx = document.getElementById("myChart9");
 
 var myBarChart = new Chart(ctx, {
@@ -369,7 +372,7 @@ var myBarChart = new Chart(ctx, {
 });
 
 
-// 10
+// 10th Chart - Interest (Individual)
 
 var ctx = document.getElementById("myChart10");
 
@@ -388,7 +391,7 @@ var myBarChart = new Chart(ctx, {
     }
 });
 
-// 11
+// 11th Chart - Subject Wise Performance (Individual)
 
 var ctx = document.getElementById("myChart11");
 
@@ -417,7 +420,7 @@ var myBarChart = new Chart(ctx, {
     }
 });
 
-// 12
+// 12th Chart - Overall Performance (Individual)
 
 var data = {
   labels: ["Simple Interest", "Mensuration", "Algebra"],
@@ -438,18 +441,20 @@ var data = {
   ]
 };
 
-var ctx = document.getElementById("myChart12").getContext("2d");
+var ctx = document.getElementById("myChart12");
 new Chart(ctx, {
   type: 'groupableBar',
   data: data,
   options: {
+    responsive: true,
     legend: {
         fullWidth: true
     },
     scales: {
       yAxes: [{
         ticks: {
-          max: 100
+          max: 100,
+          min: 0
         },
         stacked: true,
       }]

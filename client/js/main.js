@@ -33,7 +33,7 @@ app.controller('Main', ['$scope', function ($scope) {
       {
          count: "1.23",
          text: "TL Quotient",
-         icon: "graduation-cap",
+         icon: "signal",
          panel: "panel-red"
       }
    ]
